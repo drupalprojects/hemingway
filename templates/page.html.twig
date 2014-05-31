@@ -1,4 +1,5 @@
 <div id="layout">
+    {% if logged_in %}
     <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
@@ -13,14 +14,13 @@
 
             {{ page.sidebar }}
 
-            {% if logged_in %}
             <div class="profile">
                 <a href="{{ url('user/logout') }}" title="{{ 'Logout'|t }}" rel="home">{{ 'Logout'|t }}</a>
             </div>
-            {% endif %}
 
         </div>
     </div>
+    {% endif %}
 
     <div id="main">
         <div class="header">

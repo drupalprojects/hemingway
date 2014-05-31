@@ -50,6 +50,10 @@ The content `<div>` is where all your content goes.
     line-height: 1.6em;
 }
 
+.not-logged-in .content {
+    max-width: 600px;
+}
+
 .header {
      margin: 0;
      color: #333;
@@ -227,6 +231,11 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         padding-left: 150px; /* left col width "#menu" */
         left: 0;
     }
+
+    body.not-logged-in #layout{
+        padding-left: 0;
+    }
+
     #menu {
         left: 150px;
     }
