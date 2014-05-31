@@ -5,10 +5,10 @@ package: Core
 version: VERSION
 core: 8.x
 regions:
-  header: Header
   content: Content
-  sidebar: 'Sidebar'
+  sidebar: Sidebar
   footer: Footer
 stylesheets:
   screen:
+    - css/main.css
     - vendor/pure/pure-min.css
