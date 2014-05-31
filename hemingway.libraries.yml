@@ -1,0 +1,7 @@
+base:
+  version: VERSION
+
+maintenance_page:
+  version: VERSION
+  dependencies:
+    - system/maintenance

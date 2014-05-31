@@ -1,0 +1,11 @@
+name: Hemingway
+type: theme
+description: 'A fixed sidebar theme for the Nimble distro'
+package: Core
+version: VERSION
+core: 8.x
+regions:
+  header: Header
+  content: Content
+  sidebar: 'Sidebar'
+  footer: Footer
