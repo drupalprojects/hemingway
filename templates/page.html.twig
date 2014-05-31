@@ -9,10 +9,15 @@
         <div class="pure-menu pure-menu-open">
             <a class="pure-menu-heading" href="#">Nimble</a>
 
-
             {{ main_menu }}
-            
+
             {{ page.sidebar }}
+
+            {% if logged_in %}
+            <div class="profile">
+                <a href="{{ url('user/logout') }}" title="{{ 'Logout'|t }}" rel="home">{{ 'Logout'|t }}</a>
+            </div>
+            {% endif %}
 
         </div>
     </div>
